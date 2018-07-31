@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/options_activity"
+            android:icon="@drawable/ic_delete_red_500_24dp"
+            android:title="@string/options_activity">
+
+        </item>
+        <item
+            android:id="@+id/info_activity"
+            android:icon="@drawable/ic_delete_red_500_24dp"
+            android:title="@string/info_activity"/>
+        <item
+            android:id="@+id/focus_activity"
+            android:icon="@drawable/ic_delete_red_500_24dp"
+            android:title="@string/focus_activity"/>
+
+
+    </group>
+
+    <item android:title="@string/how_to_activity">
+
+        <menu>
+            <item android:id="@+id/menu"
+                android:title="@string/info_activity"
+                android:icon="@drawable/ic_delete_red_500_24dp">
+            </item>
+            </menu>
+    </item>
+
+</menu>

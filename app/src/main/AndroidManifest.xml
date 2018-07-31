@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.clakestudio.pc.dayone">
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="day1"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashSctivity" android:theme="@style/SplashTheme" android:screenOrientation="portrait">
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".GoalActivity"/>
+        <activity android:name=".OptionsActivity"/>
+        <activity android:name=".FocusActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".PasswordActivity"
+            android:configChanges="orientation|keyboard"
+            android:screenOrientation="portrait" />
+        <activity android:name=".GoalDisplayActivity"/>
+        <activity android:name=".InfoActivity"/>
+        <activity android:name=".ActivityHowTo"/>
+        <activity android:name=".HowToExtendedActivity"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#ECEFF1"
+    android:layout_height="match_parent">
+
+
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appBarLayout">
+
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="4dp"
+            android:title="your goal"
+            android:id="@+id/toolbar"
+            android:textAlignment="center"
+            app:layout_scrollFlags="scroll|enterAlways"
+            />
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:text="Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appBarLayout"
+        android:textSize="20sp"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView3" />
+
+    <CheckBox
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/switch1" />
+
+
+
+    <CheckBox
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView10"
+        android:layout_alignEnd="@+id/switch1"
+        android:id="@+id/switch2" />
+
+    <Button
+        android:text="Donate"
+        android:textColor="#FFFFFF"
+        android:background="@color/colorPrimaryDark"
+        android:onClick="info"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_toEndOf="@+id/button2"
+        android:id="@+id/button3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:id="@+id/textView10"
+        android:layout_below="@+id/textView3"
+        android:text="Shrink days" />
+
+    <TextView
+        android:text="Change your goal"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView9"
+        android:layout_below="@+id/textView10" />
+
+    <CheckBox
+        android:text=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView9"
+        android:layout_alignEnd="@+id/switch2"
+        android:id="@+id/switch3" />
+
+    <TextView
+        android:text="Info"
+        android:layout_marginTop="20dp"
+
+        android:textSize="20sp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView9"
+        android:id="@+id/textView12" />
+
+    <Button
+        android:text="Info"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#FFFFFF"
+        android:onClick="info"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:layout_below="@id/switch3"
+        android:layout_alignEnd="@+id/switch3" />
+
+    <TextView
+        android:text="Extended how/to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView12"
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        android:id="@+id/textView14"
+        android:layout_marginTop="20dp"
+        android:layout_alignLeft="@id/textView12"
+        android:layout_alignStart="@id/textView12"
+        android:textSize="20sp"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        />
+
+    <Button
+        android:text="How/to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#FFFFFF"
+        android:visibility="visible"
+        android:id="@+id/button5"
+        android:onClick="ext"
+        android:layout_alignBaseline="@+id/textView14"
+        android:layout_alignBottom="@+id/textView14"
+        android:layout_alignStart="@+id/button2" />
+
+    <TextView
+        android:text="Focus duration"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/textView14"
+        android:id="@+id/textView15" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="goal"
+        android:textAlignment="center"
+        android:ems="10"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:id="@+id/editText3"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_above="@+id/button4"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="APPLY"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#FFFFFF"
+        android:visibility="visible"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button4"
+        android:layout_marginBottom="12dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_centerHorizontal="true"
+        android:text="123"
+        android:ems="4"
+        android:id="@+id/editText2"
+        android:layout_below="@+id/textView15"
+        android:layout_toEndOf="@+id/textView10" />
+
+    <CheckBox
+        android:text="3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView15"
+        android:layout_toEndOf="@+id/textView15"
+        android:id="@+id/checkBox2" />
+
+    <CheckBox
+        android:text="5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/checkBox2"
+        android:layout_toEndOf="@+id/checkBox2"
+        android:id="@+id/checkBox3" />
+
+    <CheckBox
+        android:text="8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/checkBox3"
+        android:layout_toEndOf="@+id/checkBox3"
+        android:id="@+id/checkBox4" />
+
+    <CheckBox
+        android:text="10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/checkBox4"
+        android:layout_toEndOf="@+id/checkBox4"
+        android:id="@+id/checkBox5" />
+
+
+</RelativeLayout>
