@@ -23,7 +23,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:elevation="4dp"
-                android:title="your goal"
+                android:title="@string/your_goal"
                 android:id="@+id/toolbar"
                 android:textAlignment="center"
                 app:layout_scrollFlags="scroll|enterAlways"
@@ -32,7 +32,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="describe your goal clearly"
+            android:text="@string/describe_your_goal_clearly"
             android:visibility="gone"
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
             android:layout_marginRight="@dimen/activity_horizontal_margin"
