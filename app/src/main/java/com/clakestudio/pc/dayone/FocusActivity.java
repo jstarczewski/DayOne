@@ -47,10 +47,6 @@ public class FocusActivity extends AppCompatActivity {
             @Override
             public void onFinish() {
 
-
-
-
-
                     mPlayer.start();
                     getWindow().clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
